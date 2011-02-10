@@ -1,0 +1,122 @@
+        Compass CSS Sassy Buttons 
+====================
+
+Super sassy and super easy CSS3 buttons. 
+
+Installation
+============
+
+Install gem from the command line:
+
+    sudo gem install sassy-buttons
+
+Create a new project using Sassy Buttons
+
+    compass create project_name -r sassy-buttons --using sassy-buttons
+    
+    #import sassy buttons into your sass/scss file
+    @import "sassybuttons"
+
+    
+Adding Sassy Buttons to an exiting project:
+    
+    # Edit the project configuration file and add:
+    require 'sassy-buttons'
+    
+    # From the command line:
+    compass install sassy-buttons
+    
+    #import sassy buttons into your sass/scss file
+    @import "sassybuttons"
+
+
+Using Sassy Buttons
+===================
+
+The Sassy Button mixin
+    
+    # The simplest form of the mixin using the provided defaults (See Defaults section below)   
+    @include sassy-button
+    
+    # The Sassy Button mixin takes optional arguments that you can use to customise your buttons on the fly
+    # This will create a button with a blue matte stlye gradient, with a 15px border radius, 20px font size    
+    @include sassy-button("matte", 15px, 20px, rgba(11, 153, 194, 1))
+
+    # The complete Sassy Button mixin syntax  
+    @include sassy-button(gradient style, border radius, font size, first color, second color, text color, text style, auto hover)
+    
+
+Sassy Buttons Gradient Styles
+----------------------------
+Sassy buttons offer five gradient styles for your buttons. These gradients are generated for you base on the colors you provide. If you don't provide a second color, the mixin will create one for you.
+
+* Simple - A straight gradient from first color to the second color.
+* Matte - A gradient that adds depth but remains a more matte finish.
+* Shiny - A gradient that has a larger highlight area that gives a shinier look.
+* Glass - A gradient thats provides a glass type finish
+* Flat - No gradient, button will be given first color provided. 
+
+Sassy Buttons Text Styles
+-------------------------
+Sassy buttons has three text styles
+
+* Inset - Text shadow that makes text look inset on the button
+* Raised - Text shadow that makes text look raised on the button
+* False - no text style
+
+Sassy Buttons Defaults
+----------------------
+
+The Sassy Buttons extension provides a set of defaults sass variables that are used in the various mixins to create the buttons. These defaults can be overridden to customize your buttons to your liking and has the added benefit of having to provide less arguments when calling the sassy button mixin.
+
+	# Available defaults	
+	$sb-base-color: rgba(11,153,194,1)   // Base color of button, used to caluclate graident styles.
+	$sb-second-color: false              // Optional secondary color for gradient.
+	$sb-border-radius: 10px              // Border radius of button.
+	$sb-border-width: 1px                // Border width.
+	$sb-padding: .5em 1.5em              // Padding that gives button structure.
+	$sb-font-size: 16px                  // Font size.
+	$sb-line-height: 1.2em               // Line Height.
+	$sb-text-color: #fff                 // Button font color.
+	$sb-text-style: "inset"              // Style of button text, can be "inset" or "raised" or false.
+	$sb-gradient-style: "matte"          // Gradient style of button, can be "matte", "shiny", "glass", "simple", "flat".
+	$sb-hover: true                      // Automatically generate psuedo :hover state styles.
+	
+	# Sassy Button structure mixin that gets called everytime you create a sassy button.
+	# You can add any custom styles you want applied to all your buttons.	
+	@mixin sassy-button-default-structure
+		:display inline-block	
+		:width auto
+		:height auto
+		:cursor pointer
+		
+Additional Sassy Button Styles
+------------------------------
+
+Sassy Buttons provides two mixins that can add a little extra style to your buttons
+
+	# Mixin for adding styles to buttons
+	@include sassy-button-style(style, color)
+
+Available styles: 
+
+* Inset - box shadow that gives button an inset look.
+* Push - box shadow that gives button a "pushable" look.
+
+
+Available Sassy Buttons Mixins
+------------------------------
+
+Sassy buttons are made up a few different mixins, which all get called by the main sassy button mixin (@include sassy-button), these are all available for you to use to have more control over your buttons.  
+
+	# Mixin for the structure of your button (this mixin calls the sassy-button-default structure mixin).
+	# Example use: Creating a custom button structure to apply color and text style mixins on.
+	@include sassy-button-structure(border radius, border width, padding, font size, line height)
+    
+	# Mixin for the gradient styles
+	# Example use: You could call this mixin on a :hover or :active state to provide your own styles for those pseudo states.
+	@include sassy-button-colors(gradient style, first color, second color, auto hover)
+	
+	# Mixin for text styles
+	# Example use: Apply a "inset", "raised" text style to a button
+	@include sassy-button-text-style(first color, text color, text style )
