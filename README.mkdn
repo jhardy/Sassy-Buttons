@@ -3,6 +3,8 @@ Compass CSS Sassy Buttons
 
 Super sassy and super easy CSS3 buttons. 
 
+![sassy buttons](http://dl.dropbox.com/u/1274637/sassy-buttons.png)
+
 Installation
 ============
 
