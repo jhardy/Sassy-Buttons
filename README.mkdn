@@ -1,5 +1,5 @@
-        Compass CSS Sassy Buttons 
-====================
+Compass CSS Sassy Buttons 
+=========================
 
 Super sassy and super easy CSS3 buttons. 
 
