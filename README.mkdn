@@ -50,12 +50,12 @@ The Sassy Button mixin
 
 Sassy Buttons Gradient Styles
 ----------------------------
-Sassy buttons offer five gradient styles for your buttons. These gradients are generated for you base on the colors you provide. If you don't provide a second color, the mixin will create one for you.
+Sassy buttons offer five gradient styles for your buttons. These gradients are generated for you based on the colors you provide. If you don't provide a second color, the mixin will create one for you.
 
 * Simple - A straight gradient from first color to the second color.
-* Matte - A gradient that adds depth but remains a more matte finish.
+* Matte - A gradient that adds depth but retains a matte finish.
 * Shiny - A gradient that has a larger highlight area that gives a shinier look.
-* Glass - A gradient thats provides a glass type finish
+* Glass - A gradient thats provides a glass finish
 * Flat - No gradient, button will be given first color provided. 
 
 Sassy Buttons Text Styles
