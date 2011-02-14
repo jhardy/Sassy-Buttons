@@ -55,7 +55,7 @@ Sassy buttons offer five gradient styles for your buttons. These gradients are g
 * Simple - A straight gradient from first color to the second color.
 * Matte - A gradient that adds depth but retains a matte finish.
 * Shiny - A gradient that has a larger highlight area that gives a shinier look.
-* Glass - A gradient thats provides a glass finish
+* Glass - A gradient that provides a glass finish
 * Flat - No gradient, button will be given first color provided. 
 
 Sassy Buttons Text Styles
@@ -69,7 +69,7 @@ Sassy buttons has three text styles
 Sassy Buttons Defaults
 ----------------------
 
-The Sassy Buttons extension provides a set of defaults sass variables that are used in the various mixins to create the buttons. These defaults can be overridden to customize your buttons to your liking and has the added benefit of having to provide less arguments when calling the sassy button mixin.
+The Sassy Buttons extension provides a set of default sass variables that are used in the various mixins to create the buttons. These defaults can be overridden to customize your buttons and has the added benefit of having to provide less arguments when calling the sassy button mixin.
 
 	# Available defaults	
 	$sb-base-color: rgba(11,153,194,1)   // Base color of button, used to caluclate graident styles.
@@ -87,10 +87,10 @@ The Sassy Buttons extension provides a set of defaults sass variables that are u
 	# Sassy Button structure mixin that gets called everytime you create a sassy button.
 	# You can add any custom styles you want applied to all your buttons.	
 	@mixin sassy-button-default-structure
-		:display inline-block	
-		:width auto
-		:height auto
-		:cursor pointer
+		display: inline-block	
+		width: auto
+		height: auto
+		cursor: pointer
 		
 Additional Sassy Button Styles
 ------------------------------
@@ -103,13 +103,13 @@ Sassy Buttons provides two mixins that can add a little extra style to your butt
 Available styles: 
 
 * Inset - box shadow that gives button an inset look.
-* Push - box shadow that gives button a "pushable" look.
+* Push - box shadow that gives button a pushable look.
 
 
 Available Sassy Buttons Mixins
 ------------------------------
 
-Sassy buttons are made up a few different mixins, which all get called by the main sassy button mixin (@include sassy-button), these are all available for you to use to have more control over your buttons.  
+A sassy button is made up a few different mixins, which all get called by the main sassy button mixin (@include sassy-button). These mixins are  available for you to use for advanced control over your buttons.  
 
 	# Mixin for the structure of your button (this mixin calls the sassy-button-default structure mixin).
 	# Example use: Creating a custom button structure to apply color and text style mixins on.
