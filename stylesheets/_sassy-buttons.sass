@@ -44,8 +44,8 @@ $sb-ieSupport: false								// TODO - Better IE support
 // The Sassy Button kitchen sink.
 @mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-hover: $sb-hover)
 	@include sassy-button-structure($border-radius, $sb-border-width, $sb-padding, $font-size, $sb-line-height)
-	@include sassy-button-colors($gradient-style, $first-color, $second-color, $auto-hover)
-	@include sassy-button-text-style($first-color, $text-color, $text-style )
+	@include sassy-button-colors($gradient-style, $first-color, $second-color, $auto-hover, $text-color, $text-style)
+	
 	
 // Structure for a sassy button
 @mixin sassy-button-structure($border-radius: $sb-border-radius, $border-width: $sb-border-width, $padding: $sb-padding, $font-size: $sb-font-size, $line-height: $sb-line-height)

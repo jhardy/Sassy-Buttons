@@ -1,7 +1,8 @@
-// Mixin that does all the gradient magic
+// Mixin that does all the gradient magic    
+@import "sassy-button-text"
 
 @mixin sassy-button-colors($style: "matte", $base-color: $sb-base-color, $second-color: "false", $auto-states: true)
-	
+	$first-color: $base-color
 	$lightness : lightness($base-color)
 	$brightnessDivsor : 1
 	@if $lightness > 75
@@ -68,4 +69,8 @@
 		
 		@if $auto-states
 			@include sassy-pseudo-states("all", $base-color, false, false, $style)
+	
+	// Apply Text Styles 
+	@if $text-style 	
+		@include sassy-button-text-style($first-color, $second-color, $text-color, $text-style)   
 		
