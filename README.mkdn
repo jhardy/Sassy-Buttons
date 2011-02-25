@@ -117,8 +117,8 @@ A sassy button is made up a few different mixins, which all get called by the ma
     
 	# Mixin for the gradient styles
 	# Example use: You could call this mixin on a :hover or :active state to provide your own styles for those pseudo states.
-	@include sassy-button-colors(gradient style, first color, second color, auto hover)
+	@include sassy-button-colors(gradient style, first color, second color, auto hover, text-color, text-style)
 	
 	# Mixin for text styles
 	# Example use: Apply a "inset", "raised" text style to a button
-	@include sassy-button-text-style(first color, text color, text style )
+	@include sassy-button-text-style(first color, second-color text color, text style )
