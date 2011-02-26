@@ -65,6 +65,7 @@
 			@include sassy-pseudo-states("all", $base-color, $second-color, false, $style)
 		
 	@if $style == "flat"
+		$second-color: $base-color
 		:background-color $base-color
 		:border 0
 		
