@@ -5,6 +5,8 @@ Super sassy and super easy CSS3 buttons.
 
 ![sassy buttons](http://dl.dropbox.com/u/1274637/sassy-buttons.png)
 
+Visit the [demo site](http://jaredhardy.com/playground/sassy-buttons/) to see the buttons in action
+
 Installation
 ============
 
