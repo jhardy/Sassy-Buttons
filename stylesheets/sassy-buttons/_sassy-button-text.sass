@@ -14,11 +14,11 @@
 	:color $text-color
 	@if $text-style == "inset"
 		@if $text-lightness < 50
-			@include text-shadow(lighten($base-color, $text-color-shift), 0, 1px, 0)
+			@include text-shadow(lighten($base-color, $text-color-shift) 0 1px 0)
 		@else	
-			@include text-shadow(darken($base-color, $text-color-shift), 0, -1px, 0)
+			@include text-shadow(darken($base-color, $text-color-shift), 0 -1px 0)
 	@if $text-style == "raised"
 		@if $text-lightness < 50
-			@include text-shadow(lighten($base-color, $text-color-shift), 0, -1px, 0)
+			@include text-shadow(lighten($base-color, $text-color-shift), 0 -1px 0)
 		@else
-			@include text-shadow(darken($base-color, $text-color-shift), 0, 1px, 0)
+			@include text-shadow(darken($base-color, $text-color-shift), 0 1px 0)

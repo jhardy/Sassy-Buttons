@@ -10,19 +10,19 @@
 	@if $style == "matte"
 		&:hover
 			@include sb-ie-hover($first-color)
-			@include linear-gradient(color-stops($highlight, lighten($first-color, 5%) 3%, lighten($second-color, 5%) 75%))
+			@include background(linear-gradient(color-stops($highlight, lighten($first-color, 5%) 3%, lighten($second-color, 5%) 75%)))
 	@if $style == "shiny"
 		&:hover
 			@include sb-ie-hover($first-color)
-			@include linear-gradient(color-stops($highlight, lighten($first-color, 4%) 3%, lighten($second-color, 8%) 60%, lighten($second-color, 4%)))
+			@include background(linear-gradient(color-stops($highlight, lighten($first-color, 4%) 3%, lighten($second-color, 8%) 60%, lighten($second-color, 4%))))
 	@if $style == "glass"
 		&:hover
 			@include sb-ie-hover($first-color)
-			@include linear-gradient(color-stops($highlight, lighten($first-color, 15%) 2%, lighten($first-color, 10%) 50%, lighten($first-color, 3%) 51%, lighten($second-color, 10%)))
+			@include background(linear-gradient(color-stops($highlight, lighten($first-color, 15%) 2%, lighten($first-color, 10%) 50%, lighten($first-color, 3%) 51%, lighten($second-color, 10%))))
 	@if $style == "simple"
 		&:hover
 			@include sb-ie-hover($first-color)
-			@include linear-gradient(color-stops(lighten($first-color, 5%),lighten($second-color, 5%)))
+			@include background(linear-gradient(color-stops(lighten($first-color, 5%),lighten($second-color, 5%))))
 	@if $style == "flat"
 		&:hover
 			:background-color lighten($first-color, 5%)

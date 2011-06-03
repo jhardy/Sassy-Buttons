@@ -19,7 +19,7 @@
 			$first-color: lighten($base-color,15%)
 			$second-color: $base-color	
 		
-		@include linear-gradient(color-stops($highlight, $first-color 3%, $second-color 70%))
+		@include background(linear-gradient(color-stops($highlight, $first-color 3%, $second-color 70%)))
 	
 		:border-color $second-color
 		@if $auto-states
@@ -33,7 +33,7 @@
 		@if $second-color == false
 			$second-color: darken($base-color, 10%)
 			
-		@include linear-gradient(color-stops($highlight,$first-color 3%, $base-color 50%, $second-color))
+		@include background(linear-gradient(color-stops($highlight,$first-color 3%, $base-color 50%, $second-color)))
 		
 		:border-color $second-color
 		
@@ -48,7 +48,7 @@
 		@if $second-color == false
 			$second-color: darken($base-color, 10%)
 		
-		@include linear-gradient(color-stops($highlight, $shine 2%, $first-color 50%, $base-color 51%, $second-color))
+		@include background(linear-gradient(color-stops($highlight, $shine 2%, $first-color 50%, $base-color 51%, $second-color)))
 		:border-color $second-color
 		
 		@if $auto-states
@@ -58,7 +58,7 @@
 		@if $second-color == false
 			$second-color: darken($base-color, 20%)
 		
-		@include linear-gradient(color-stops($base-color, $second-color))
+		@include background(linear-gradient(color-stops($base-color, $second-color)))
 		:border-color $second-color
 		
 		@if $auto-states
