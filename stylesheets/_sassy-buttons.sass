@@ -1,4 +1,4 @@
-// Sassy Buttons 
+// Sassy Buttons
 // Compass extension by Jared Hardy - http://www.jaredhardy.com
 
 @import "compass/css3/border-radius"
@@ -6,54 +6,45 @@
 @import "compass/css3/text-shadow"
 @import "compass/css3/gradient"
 
-@import "sassy-buttons/sassy-button-colors"
+@import "sassy-buttons/sassy-button-gradients"
 @import "sassy-buttons/sassy-button-styles"
 @import "sassy-buttons/sassy-button-text"
 @import "sassy-buttons/sassy-button-pseudo-states"
 
 
 // Sassy Button defaults
-// These are the base defaults for the buttons, if you are going to use similar buttons on an entire site changing these 
-// can save you some time by calling the sassy button mixin with less arguments. 
+// These are the base defaults for the buttons, if you are going to use similar buttons on an entire site changing these
+// can save you some time by calling the sassy button mixin with less arguments.
 
-$sb-base-color: rgba(11,153,194,1) 	// Base color of button.
-$sb-second-color: false 					// Optional secondary color for gradient.
-$sb-border-radius: 10px 						// Border radius of button.
-$sb-border-width: 1px 							// Border width.
-$sb-padding: .5em 1.5em 						// Padding that gives button structure.
-$sb-font-size: 16px									// Font size.
-$sb-line-height: 1.2em							// Line Height.
-$sb-text-color: #fff			 					// Button font color.
-$sb-text-style: "inset"							// Style of button text, can be "inset" or "raised" or false.
-$sb-gradient-style: "matte"					// Gradient style of button, can be "matte", "shiny", or "glass".
-$sb-hover: true											// Automatically generate psuedo :hover state styles.
-$sb-ieSupport: false								// TODO - Better IE support
+$sb-base-color:       rgba(11,153,194,1)  // Base color of button.
+$sb-second-color:     false               // Optional secondary color for gradient.
+$sb-border-radius:    10px                // Border radius of button.
+$sb-padding:          .3em 1.5em          // Padding that gives button structure.
+$sb-font-size:        16px                // Font size.
+$sb-text-color:       #fff                // Button font color.
+$sb-text-style:       "inset"             // Style of button text, can be "inset" or "raised" or false.
+$sb-gradient-style:   "simple"            // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
+$sb-pseudo-states:    true                // Automatically generate pseudo state styles.
 
-// Mixing that gets included when calling the sassy-button-structure if you need any 
+
+// Mixing that gets included when calling the sassy-button-structure if you need any
 // styles applied to all your sassy buttons, add it here.
-@mixin sassy-button-default-structure
-	:display inline-block	
-	:width auto
-	:height auto
-	:cursor pointer
-	// IE support that will be coming soon
-	//@if($sb-ieSupport)
-		//:background-image image-url(ie-gradient.png)
-		//:background-repeat repeat-x
+@mixin sassy-button-default-sassytructure
+  display: inline-block
+  cursor: pointer
+  line-height: 1.5
 
 // The Sassy Button kitchen sink.
-@mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-hover: $sb-hover)
-	@include sassy-button-structure($border-radius, $sb-border-width, $sb-padding, $font-size, $sb-line-height)
-	@include sassy-button-colors($gradient-style, $first-color, $second-color, $auto-hover, $text-color, $text-style)
-	
-	
+@mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-states: $sb-pseudo-states)
+  @include sassy-button-structure($border-radius, $font-size, $sb-padding)
+  @include sassy-button-gradient($gradient-style, $first-color, $second-color, $text-color, $text-style, $auto-states)
+
+
+
 // Structure for a sassy button
-@mixin sassy-button-structure($border-radius: $sb-border-radius, $border-width: $sb-border-width, $padding: $sb-padding, $font-size: $sb-font-size, $line-height: $sb-line-height)
-	@include sassy-button-default-structure
-	:font-size $font-size
-	:padding $padding
-	:line-height $line-height
-	:border-style solid 
-	:border-width $border-width
-	@include border-radius($border-radius)
-	
+@mixin sassy-button-structure($border-radius: $sb-border-radius, $font-size: $sb-font-size, $padding: $sb-padding)
+  font-size: $font-size
+  padding: $padding
+  @include sassy-button-default-structure
+  @include border-radius($border-radius)
+
