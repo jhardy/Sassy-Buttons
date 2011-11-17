@@ -10,6 +10,7 @@ Visit the [demo site](http://jaredhardy.com/sassy-buttons/) to see the buttons i
 Installation
 ============
 
+(See Rails 3.1 notes below)
 Install gem from the command line:
 
     (sudo) gem install sassy-buttons
@@ -23,8 +24,18 @@ Installing Sassy Buttons:
     compass install -r sassy-buttons -f sassy-buttons
 
     #import sassy buttons partial into your sass/scss file
-    @import "sassybuttons"
+    @import "sassy-buttons"
 
+Installing Sassy Buttons on Rails 3.1
+-------------------------------------
+    # Edit your project Gemfile and add the following line to  your :assets group
+    gem 'sassy-buttons'
+
+    # Edit your application.css(.sass|.scss) file in the assets/stylesheets folder and add
+    @import "sassy-buttons"
+
+    # Bundle your gems to get the sassy-buttons plugin to compass
+    $ bundle install
 
 Using Sassy Buttons
 ===================
