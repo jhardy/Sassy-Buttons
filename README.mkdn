@@ -11,6 +11,7 @@ Installation
 ============
 
 (See Rails 3.1 notes below)
+
 Install gem from the command line:
 
     (sudo) gem install sassy-buttons
