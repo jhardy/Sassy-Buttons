@@ -88,6 +88,7 @@ The Sassy Buttons extension provides a set of default sass variables that are us
 	$sb-text-style:       "inset"             // Style of button text, can be "inset" or "raised" or false.
 	$sb-gradient-style:   "simple"            // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
 	$sb-pseudo-states:    true                // Automatically generate pseudo state styles.
+  $sb-ie-support:       false               // Add gradient png for IE 7+
 
   # Sassy Button structure mixin that gets called every time you create a sassy button.
   # You can add any custom styles you want applied to all your buttons.

@@ -2,14 +2,18 @@
 @import "sassy-button-text"
 @import "sassy-button-shadows"
 
-@mixin sassy-button-gradient($style: "matte", $base-color: $sb-base-color, $second-color: false, $text-color: $sb-text-color, $text-style: $sb-text-style,  $auto-states: true)
+@mixin sassy-button-gradient($style: "matte", $base-color: $sb-base-color, $second-color: false, $text-color: $sb-text-color, $text-style: $sb-text-style,  $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
   $first-color: $base-color
   $lightness : lightness($base-color)
   $brightnessDivsor : 1
   @if $lightness > 75
     $brightnessDivsor : 2
 
-  background-color: $base-color
+  // Add IE Gradient PNG if $sb-ie-support is true else just put add the background color
+  @if $ie
+    background: image-url("sassy-ie-overlay.png") repeat-x bottom left $base-color
+  @else
+    background-color: $base-color
 
   // Matte Gradient Style
   @if $style == "matte"
