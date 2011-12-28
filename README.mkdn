@@ -78,7 +78,7 @@ Sassy Buttons Defaults
 
 The Sassy Buttons extension provides a set of default sass variables that are used in the various mixins to create the buttons. These defaults can be overridden to customize your buttons and has the added benefit of having to provide less arguments when calling the sassy button mixin.
 
-  # Available defaults
+	#Available defaults
 	$sb-base-color:       rgba(11,153,194,1)  // Base color of button.
 	$sb-second-color:     false               // Optional secondary color for gradient.
 	$sb-border-radius:    10px                // Border radius of button.
@@ -88,10 +88,10 @@ The Sassy Buttons extension provides a set of default sass variables that are us
 	$sb-text-style:       "inset"             // Style of button text, can be "inset" or "raised" or false.
 	$sb-gradient-style:   "simple"            // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
 	$sb-pseudo-states:    true                // Automatically generate pseudo state styles.
-  $sb-ie-support:       false               // Add gradient png for IE 7+
+	$sb-ie-support:       false               // Add gradient png for IE 7+
 
-  # Sassy Button structure mixin that gets called every time you create a sassy button.
-  # You can add any custom styles you want applied to all your buttons.
+	# Sassy Button structure mixin that gets called every time you create a sassy button.
+	# You can add any custom styles you want applied to all your buttons.
 	@mixin sassy-button-default-sassytructure
 	  display: inline-block
 	  cursor: pointer
@@ -103,8 +103,8 @@ Additional Sassy Button Styles
 
 Sassy Buttons provides two mixins that can add a little extra style to your buttons
 
-  # Mixin for adding styles to buttons
-  @include sassy-button-style(style, color)
+	# Mixin for adding styles to buttons
+	@include sassy-button-style(style, color)
 
 Available styles:
 
