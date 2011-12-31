@@ -77,25 +77,46 @@ Sassy Buttons Defaults
 ----------------------
 
 The Sassy Buttons extension provides a set of default sass variables that are used in the various mixins to create the buttons. These defaults can be overridden to customize your buttons and has the added benefit of having to provide less arguments when calling the sassy button mixin.
+    
+    // Base color of button.
+    $sb-base-color: rgba(11, 153, 194, 1) !default
+    
+    // Optional secondary color for gradient.
+    $sb-second-color: false !default
 
-	#Available defaults
-	$sb-base-color:       rgba(11,153,194,1)  // Base color of button.
-	$sb-second-color:     false               // Optional secondary color for gradient.
-	$sb-border-radius:    10px                // Border radius of button.
-	$sb-padding:          .3em 1.5em          // Padding that gives button structure.
-	$sb-font-size:        16px                // Font size.
-	$sb-text-color:       #fff                // Button font color.
-	$sb-text-style:       "inset"             // Style of button text, can be "inset" or "raised" or false.
-	$sb-gradient-style:   "simple"            // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
-	$sb-pseudo-states:    true                // Automatically generate pseudo state styles.
-	$sb-ie-support:       false               // Add gradient png for IE 7+
+    // Border radius of button.
+    $sb-border-radius: 5px !default
 
-	# Sassy Button structure mixin that gets called every time you create a sassy button.
-	# You can add any custom styles you want applied to all your buttons.
-	@mixin sassy-button-default-sassytructure
-	  display: inline-block
-	  cursor: pointer
-	  line-height: 1.5
+    // Padding that gives button structure.
+    $sb-padding: 0.3em 1.5em !default
+
+    // Font size.
+    $sb-font-size: 16px !default
+
+    // Button font color.
+    $sb-text-color: white !default
+
+    // Style of button text, can be "inset" or "raised" or false.
+    $sb-text-style: "inset" !default
+
+    // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
+    $sb-gradient-style: "simple" !default
+
+    // Automatically generate pseudo state styles.
+    $sb-pseudo-states: true !default
+
+    // Add gradient png for IE 7+
+    $sb-ie-support: false !default
+
+    // Set the default Line height
+    $sb-line-height: 1.5 !default
+
+  # Sassy Button structure mixin that gets called every time you create a sassy button.
+  # You can add any custom styles you want applied to all your buttons.
+    @mixin sassy-button-default-sassytructure
+    display: inline-block
+    cursor: pointer
+    line-height: $sb-line-height
 
 
 Additional Sassy Button Styles
