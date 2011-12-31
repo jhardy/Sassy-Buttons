@@ -16,16 +16,38 @@
 // These are the base defaults for the buttons, if you are going to use similar buttons on an entire site changing these
 // can save you some time by calling the sassy button mixin with less arguments.
 
-$sb-base-color:       rgba(11,153,194,1)  // Base color of button.
-$sb-second-color:     false               // Optional secondary color for gradient.
-$sb-border-radius:    5px                 // Border radius of button.
-$sb-padding:          .3em 1.5em          // Padding that gives button structure.
-$sb-font-size:        16px                // Font size.
-$sb-text-color:       #fff                // Button font color.
-$sb-text-style:       "inset"             // Style of button text, can be "inset" or "raised" or false.
-$sb-gradient-style:   "simple"            // Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
-$sb-pseudo-states:    true                // Automatically generate pseudo state styles.
-$sb-ie-support: 	  false				  // Add gradient png for IE 7+
+// Base color of button.
+$sb-base-color: rgba(11, 153, 194, 1) !default
+
+// Optional secondary color for gradient.
+$sb-second-color: false !default
+
+// Border radius of button.
+$sb-border-radius: 5px !default
+
+// Padding that gives button structure.
+$sb-padding: 0.3em 1.5em !default
+
+// Font size.
+$sb-font-size: 16px !default
+
+// Button font color.
+$sb-text-color: white !default
+
+// Style of button text, can be "inset" or "raised" or false.
+$sb-text-style: "inset" !default
+
+// Gradient style of button, can be "flat", "glass", "matte", "shiny", or "simple".
+$sb-gradient-style: "simple" !default
+
+// Automatically generate pseudo state styles.
+$sb-pseudo-states: true !default
+
+// Add gradient png for IE 7+
+$sb-ie-support: false !default
+
+// Set the default Line height
+$sb-line-height: 1.5 !default
 
 
 // Mixing that gets included when calling the sassy-button-structure if you need any
@@ -33,7 +55,7 @@ $sb-ie-support: 	  false				  // Add gradient png for IE 7+
 @mixin sassy-button-default-structure
   display: inline-block
   cursor: pointer
-  line-height: 1.5
+  line-height: $sb-line-height
 
 // The Sassy Button kitchen sink.
 @mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
