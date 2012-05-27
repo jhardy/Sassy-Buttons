@@ -39,7 +39,7 @@ Installing Sassy Buttons on Rails 3.1
     $ bundle install
 
     # Install Sassy Buttons Assets
-    $ bundle exec compass sassy-buttons
+    $ bundle exec compass install sassy-buttons
 
 Using Sassy Buttons
 ===================
