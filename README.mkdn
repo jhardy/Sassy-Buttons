@@ -141,10 +141,10 @@ Available Sassy Buttons Mixins
 
 A sassy button is made up a few different mixins, which all get called by the main sassy button mixin (@include sassy-button). These mixins are  available for you to use for advanced control over your buttons.
 
-  # Mixin for the structure of your button (this mixin calls the sassy-button-default structure mixin).
-  # Example use: Creating a custom button structure to apply color and text style mixins on.
-  @include sassy-button-structure(border-radius, font-size, padding)
+	# Mixin for the structure of your button (this mixin calls the sassy-button-default structure mixin).
+  	# Example use: Creating a custom button structure to apply color and text style mixins on.
+  	@include sassy-button-structure(border-radius, font-size, padding)
 
-  # Mixin for the gradient styles
-  # Example use: You could call this mixin on a :hover or :active state to provide your own styles for those pseudo states.
-  @include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states)
+  	# Mixin for the gradient styles
+  	# Example use: You could call this mixin on a :hover or :active state to provide your own styles for those pseudo states.
+  	@include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states)
