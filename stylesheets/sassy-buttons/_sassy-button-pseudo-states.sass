@@ -1,11 +1,13 @@
-// Mixin that generates :hover and :active psuedo states.
+// Mixin that generates :hover, :active, and disabled psuedo states
 
 @mixin sassy-pseudo-states($first-color, $second-color, $style)
   @include sassy-button-hover($first-color, $second-color, $style)
 
   &.disabled, &[disabled]
     opacity: 0.6
+    background: $second-color
     cursor: default
+    @include box-shadow(none)
 
 
 @mixin sassy-button-hover($first-color, $second-color, $style)
