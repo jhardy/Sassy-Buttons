@@ -1,3 +1,5 @@
 *.gem
 .bundle
 Rakefile
+.DS_Store
+
