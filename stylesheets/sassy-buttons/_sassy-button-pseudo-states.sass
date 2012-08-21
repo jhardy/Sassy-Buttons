@@ -12,6 +12,8 @@
 
 @mixin sassy-button-hover($first-color, $second-color, $style)
 
+  &:hover
+    text-decoration: none
   @if $style == "matte"
     &:hover
       background-color: darken($second-color, 5%)
