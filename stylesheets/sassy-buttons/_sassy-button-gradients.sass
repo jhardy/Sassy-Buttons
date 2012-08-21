@@ -9,9 +9,9 @@
   @if $lightness > 75
     $brightnessDivsor : 2
 
-  // Add IE Gradient PNG if $sb-ie-support is true else just add the background color
+  // user a simple filter gradient if $sb-ie-support is true
   @if $ie
-    background: image-url("sassy-ie-overlay.png") repeat-x bottom left $base-color
+    @include filter-gradient($first-color, darken($first-color, 20%))
   @else
     background-color: $base-color
 
