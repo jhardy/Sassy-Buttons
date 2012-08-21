@@ -2,4 +2,6 @@
 .bundle
 Rakefile
 .DS_Store
-
+pkg/
+.sass-cache
+build/
