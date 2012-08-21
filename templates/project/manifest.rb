@@ -4,13 +4,13 @@ stylesheet '_sassybuttons.sass', :media => 'screen, projection'
 description "Sassy Buttons"
 
 help %Q{
+Please see the Sassy Buttons website for all documentation and tutorials:
 
-	Documentation coming shortly
-
+    http://www.jaredhardy.com/sassy-buttons
 }
 
-welcome_message %Q{
+help %Q{
+Please see the Sassy Buttons website for all documentation and tutorials:
 
-	Sassy Buttons
-
+    http://www.jaredhardy.com/sassy-buttons
 }

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "sassy-buttons"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Hardy"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Sassy CSS3 buttons using Compass./"
   s.email = "jared@jaredhardy.com"
   s.extra_rdoc_files = ["LICENSE", "README.mkdn", "lib/sassy-buttons.rb"]
-  s.files = ["Gemfile", "LICENSE", "Manifest", "README.mkdn", "VERSION", "lib/sassy-buttons.rb", "sassy-buttons.gemspec", "stylesheets/_sassy-buttons.sass", "stylesheets/sassy-buttons/_sassy-button-gradients.sass", "stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass", "stylesheets/sassy-buttons/_sassy-button-shadows.sass", "stylesheets/sassy-buttons/_sassy-button-styles.sass", "stylesheets/sassy-buttons/_sassy-button-text.sass", "templates/project/_sassybuttons.sass", "templates/project/manifest.rb", "templates/project/sassy-ie-overlay.png", "Rakefile"]
+  s.files = ["Gemfile", "LICENSE", "Manifest", "README.mkdn", "VERSION", "lib/sassy-buttons.rb", "sassy-buttons.gemspec", "stylesheets/_sassy-buttons.sass", "stylesheets/sassy-buttons/_sassy-button-gradients.sass", "stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass", "stylesheets/sassy-buttons/_sassy-button-shadows.sass", "stylesheets/sassy-buttons/_sassy-button-styles.sass", "stylesheets/sassy-buttons/_sassy-button-text.sass", "templates/project/_sassybuttons.sass", "templates/project/manifest.rb", "Rakefile"]
   s.homepage = "http://jaredhardy.com/"
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Sassy-buttons", "--main", "README.mkdn"]
   s.require_paths = ["lib"]
