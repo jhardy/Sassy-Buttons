@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sassy-buttons"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Hardy"]
-  s.date = "2012-08-21"
+  s.date = "2012-08-24"
   s.description = "Sassy CSS3 buttons using Compass./"
   s.email = "jared@jaredhardy.com"
   s.extra_rdoc_files = ["LICENSE", "README.mkdn", "lib/sassy-buttons.rb"]
