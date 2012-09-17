@@ -22,7 +22,7 @@ Installing Sassy Buttons:
     require 'sassy-buttons'
 
     # From the command line:
-    compass install -r sassy-buttons -f sassy-buttons
+    compass install sassy-buttons
 
     #import sassy buttons partial into your sass/scss file
     @import "sassy-buttons"
