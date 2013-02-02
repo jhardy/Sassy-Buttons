@@ -2,7 +2,7 @@
 @import "sassy-button-text"
 @import "sassy-button-shadows"
 
-@mixin sassy-button-gradient($style: "matte", $base-color: $sb-base-color, $second-color: false, $text-color: $sb-text-color, $text-style: $sb-text-style,  $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
+@mixin sassy-button-gradient($style: $sb-gradient-style, $base-color: $sb-base-color, $second-color: $sb-second-color, $text-color: $sb-text-color, $text-style: $sb-text-style,  $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
   $first-color: $base-color
   $lightness : lightness($base-color)
   $brightnessDivsor : 1
