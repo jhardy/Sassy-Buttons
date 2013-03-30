@@ -4,7 +4,7 @@
   @include sassy-button-hover($first-color, $second-color, $style)
 
   &.disabled, &[disabled]
-    opacity: 0.6
+    @include opacity(0.6)
     background: $second-color
     cursor: default
     @include box-shadow(none)
