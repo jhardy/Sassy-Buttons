@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in sassy-buttons.gemspec
+# Specify your gem's dependencies in Sassy-Buttons.gemspec
 gemspec
