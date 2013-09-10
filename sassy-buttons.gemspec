@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sassy-buttons/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Sassy-Buttons"
+  spec.name          = "sassy-buttons"
   spec.version       = Sassy::Buttons::VERSION
   spec.authors       = ["Jared Hardy"]
   spec.email         = ["jared@jaredhardy.com"]
